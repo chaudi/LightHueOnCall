@@ -21,13 +21,38 @@ namespace SharedFiles.Helpers
 
 		#region Setting Constants
 
-		private const string SettingsKey = "settings_key";
-		private static readonly string SettingsDefault = string.Empty;
+		private const string SettingsKey = "settingsKey";
+        private const string UserNameKey = "UserNameKey";
+        private const string LightsKey = "LightsKey";
+        private static readonly string SettingsDefault = string.Empty;
 
-		#endregion
+        #endregion
 
+        public static string Lights
+        {
+            get
+            {
+                return AppSettings.GetValueOrDefault(LightsKey, SettingsDefault);
+            }
+            set
+            {
+                AppSettings.AddOrUpdateValue(LightsKey, value);
+            }
+        }
 
-		public static string GeneralSettings
+        public static string UserName
+        {
+            get
+            {
+                return AppSettings.GetValueOrDefault(UserNameKey, SettingsDefault);
+            }
+            set
+            {
+                AppSettings.AddOrUpdateValue(UserNameKey, value);
+            }
+        }
+
+        public static string GeneralSettings
 		{
 			get
 			{
