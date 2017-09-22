@@ -1,9 +1,4 @@
-﻿using HueOnIncomingCall.Hue;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SharedFiles.Hue;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

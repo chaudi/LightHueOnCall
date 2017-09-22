@@ -1,4 +1,4 @@
-﻿namespace HueOnIncomingCall.Hue.Messages.Lights
+﻿namespace SharedFiles.Hue.Messages.Lights
 {
     public class Light
     {

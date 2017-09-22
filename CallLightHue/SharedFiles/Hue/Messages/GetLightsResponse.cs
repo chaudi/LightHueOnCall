@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace HueOnIncomingCall.Hue.Messages.Lights
+namespace SharedFiles.Hue.Messages.Lights
 {
     public class GetLightsResponse
     {

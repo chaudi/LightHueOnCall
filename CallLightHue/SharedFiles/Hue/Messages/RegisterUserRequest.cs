@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HueOnIncomingCall.Hue.Messages
+namespace SharedFiles.Hue.Messages
 {
     public class RegisterUserRequest
     {

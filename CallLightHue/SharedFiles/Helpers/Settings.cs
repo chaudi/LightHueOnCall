@@ -24,9 +24,22 @@ namespace SharedFiles.Helpers
 		private const string SettingsKey = "settingsKey";
         private const string UserNameKey = "UserNameKey";
         private const string LightsKey = "LightsKey";
+        private const string LastIpKey = "LastIpKey";
         private static readonly string SettingsDefault = string.Empty;
 
         #endregion
+
+        public static string LastIp
+        {
+            get
+            {
+                return AppSettings.GetValueOrDefault(LastIpKey, SettingsDefault);
+            }
+            set
+            {
+                AppSettings.AddOrUpdateValue(LastIpKey, value);
+            }
+        }
 
         public static string Lights
         {

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Net.Http;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
-using HueOnIncomingCall.Hue.Messages;
-using HueOnIncomingCall.Hue.Messages.Lights;
+using SharedFiles.Hue.Messages;
+using SharedFiles.Hue.Messages.Lights;
 
-namespace HueOnIncomingCall.Hue
+namespace SharedFiles.Hue
 {
     public class HueCommunicator
     {

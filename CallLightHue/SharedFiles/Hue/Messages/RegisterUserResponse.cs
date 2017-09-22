@@ -1,4 +1,4 @@
-﻿namespace HueOnIncomingCall.Hue.Messages
+﻿namespace SharedFiles.Hue.Messages
 {
     public class RegisterUserResponse
     {

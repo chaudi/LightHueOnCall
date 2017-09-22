@@ -1,13 +1,10 @@
 ﻿using System;
 
-namespace HueOnIncomingCall.Hue.Messages.Lights
+namespace SharedFiles.Hue.Messages.Lights
 {
     public class State
     {
-        public Tuple<float, float> XY
-        {
-            get; set;
-        }
+        public int[] XY = new int[2];
 
         public bool On { get; set; }
 
